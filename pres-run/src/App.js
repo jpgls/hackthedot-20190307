@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Bracket from './Bracket';
-import presidents from 'data/presidents';
 import OnBoard from './components/Onboarding.jsx';
 
 class App extends Component {
