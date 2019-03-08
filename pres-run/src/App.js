@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import OnBoard from './components/Onboarding.jsx';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      onboard: false
+    }
+  }
+
+
+  toggleModal() {
+    this.setState({onboard: !this.state.onboard})
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        {this.state.onboard === false ? <OnBoard toggle={this.toggleModal.bind(this)}/> : "" }
       </div>
     );
   }
