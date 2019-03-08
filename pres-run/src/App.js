@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.onboard === false ? <OnBoard toggle={this.toggleModal.bind(this)}/> : <Results/> }
+        {this.state.onboard === false ? <OnBoard toggle={this.toggleModal.bind(this)}/> : <Results toggle = {this.toggleModal.bind(this)}/> }
       </div>
     );
   }

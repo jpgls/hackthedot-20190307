@@ -20,7 +20,7 @@
   color: white;
 }
 
-button {
+.buttonOne {
   height: 8vh;
   width: 8vw;
   border-radius: 10%;
@@ -63,4 +63,11 @@ button:hover {
 img {
   height: 40%;
 
+}
+
+.buttonTwo{
+  background-color: #B41C30;
+  color: white;
+  border-radius: 5%;
+  font-size: 1rem;
 }
