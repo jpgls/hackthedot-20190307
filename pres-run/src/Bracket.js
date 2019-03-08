@@ -1,5 +1,6 @@
 import React from 'react';
 import Box from './Box';
+import {presidents} from './data/presidents';
 
 class Bracket extends React.Component {
   render() {
