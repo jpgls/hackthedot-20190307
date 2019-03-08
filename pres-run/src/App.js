@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Bracket from './Bracket';
+import presidents from 'data/presidents';
 import OnBoard from './components/Onboarding.jsx';
 
 class App extends Component {
@@ -10,7 +12,6 @@ class App extends Component {
     }
   }
 
-
   toggleModal() {
     this.setState({onboard: !this.state.onboard})
   }
@@ -19,6 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.onboard === false ? <OnBoard toggle={this.toggleModal.bind(this)}/> : "" }
+        <Bracket />
       </div>
     );
   }
