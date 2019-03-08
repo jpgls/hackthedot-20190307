@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import OnBoard from './components/Onboarding.jsx';
+import Results from "./components/Results.jsx";
 
 class App extends Component {
   constructor() {
@@ -18,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.onboard === false ? <OnBoard toggle={this.toggleModal.bind(this)}/> : "" }
+        {this.state.onboard === false ? <OnBoard toggle={this.toggleModal.bind(this)}/> : <Results/> }
       </div>
     );
   }
